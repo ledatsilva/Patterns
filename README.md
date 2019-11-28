@@ -25,6 +25,7 @@ A pasta relatorios está o que vai ser processado, nessa pasta se encontra a cla
 **Vantagem:** Poder reutilizar código sem perder o controle dos algoritmos. 
 
 **Chain of Responsibility:** Mantém um ponteiro como "próximo". Cada classe derivada implementa sua própria contribuição para manusear o pedido (request). Se o pedido precisa ser passado para outra classe, então a classe derivada "chama de volta" à classe padrão, delegando um novo ponteiro.  O usuário cria e encadeia a cadeia, a qual pode incluir uma ligação do último nó até o nó da raiz. O usuário lança e deixa cada request com a raiz da cadeia. 
+
 A chain foi utilizada  no caso para fazer  uma busca onde um arquivo está localizado, na cloud, na rede ou no local, utilizando a classe abstrata BuscadorArquivo.  
 
 **Vantagem:** Pode-se ter responsabilidade que são intercambiáveis.
